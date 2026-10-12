@@ -1,0 +1,61 @@
+:root{
+  --fondo:#f6f8fd;
+  --papel:#ffffff;
+  --texto:#131a2e;
+  --suave:#4a5370;
+  --linea:#dde2ee;
+  --acento:#2f6bff;
+  --acento-2:#0fae7f;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --fondo:#080c18;
+    --papel:#0f1526;
+    --texto:#eef2ff;
+    --suave:#a9b2cc;
+    --linea:#232c45;
+    --acento:#7fb0ff;
+    --acento-2:#7bf1c4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--fondo);color:var(--texto);
+  font:17px/1.65 -apple-system,"Segoe UI",Roboto,system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:color-mix(in srgb,var(--acento) 30%,transparent)}
+a{color:var(--acento);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--acento);outline-offset:3px;border-radius:4px}
+main{max-width:44rem;margin:0 auto;padding:48px 20px 64px}
+.marca{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;color:var(--texto);margin-bottom:40px}
+.marca i{width:28px;height:28px;border-radius:9px;background:linear-gradient(140deg,var(--acento-2),var(--acento))}
+h1{font-size:clamp(28px,6vw,38px);line-height:1.15;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+h2{font-size:21px;line-height:1.3;margin:40px 0 8px}
+h3{font-size:17px;margin:24px 0 4px}
+p,li{max-width:68ch}
+ul,ol{padding-left:1.3em}
+li{margin:4px 0}
+.entradilla{font-size:19px;color:var(--suave);margin:0 0 8px}
+.fecha{color:var(--suave);font-size:15px}
+.caja{background:var(--papel);border:1px solid var(--linea);border-radius:16px;padding:18px 20px;margin:20px 0}
+.caja p{margin:6px 0}
+table{width:100%;border-collapse:collapse;font-size:15.5px;margin:12px 0}
+th,td{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:1px solid var(--linea)}
+th{font-weight:650}
+.enlaces{list-style:none;padding:0;display:grid;gap:12px;margin:32px 0}
+.enlaces a{display:block;padding:16px 18px;border:1px solid var(--linea);border-radius:14px;background:var(--papel);
+  text-decoration:none;color:var(--texto);font-weight:650}
+.enlaces a span{display:block;font-weight:400;color:var(--suave);font-size:15px}
+.enlaces a:hover{border-color:var(--acento)}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--linea);color:var(--suave);font-size:15px}
+@media (max-width:520px){
+  body{font-size:16px}
+  table,thead,tbody,tr,th,td{display:block}
+  thead{display:none}
+  tr{padding:10px 0;border-bottom:1px solid var(--linea)}
+  td{border:0;padding:2px 0}
+  td:first-child{font-weight:650}
+}
