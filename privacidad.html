@@ -11,10 +11,10 @@
 <main>
   <a class="marca" href="./"><i aria-hidden="true"></i>Mi Precursorado</a>
   <h1>Política de privacidad</h1>
-  <p class="fecha">Última actualización: 12 de octubre de 2026</p>
+  <p class="fecha">Última actualización: 17 de octubre de 2026</p>
 
   <div class="caja">
-    <p><b>En resumen:</b> tus registros se guardan en tu teléfono. Solo salen de él si tú lo eliges: a una hoja de cálculo de <b>tu</b> Google Drive, o a la sincronización entre tus dispositivos. No hay publicidad, ni analítica, ni se venden o ceden datos a nadie.</p>
+    <p><b>En resumen:</b> tus registros se guardan en tu teléfono. Solo salen de él si tú lo eliges: a la sincronización entre tus dispositivos (al iniciar sesión con Google), a una hoja de cálculo de <b>tu</b> Google Drive, o a una copia en la carpeta que tú elijas. Puedes usar la app sin cuenta. No hay publicidad, ni analítica, ni se venden o ceden datos a nadie.</p>
   </div>
 
   <h2>Quién es el responsable</h2>
@@ -27,25 +27,28 @@
     <tbody>
       <tr><td>Registros de servicio: fecha, tiempo, número de cursos bíblicos y las notas que escribas</td><td>En tu teléfono</td><td>Es la función de la app: calcular tus totales, metas e informes.</td></tr>
       <tr><td>Notas de mes, meses cerrados y ajustes (meta, recordatorios, tema…)</td><td>En tu teléfono</td><td>Igual que lo anterior.</td></tr>
-      <tr><td>Tu correo de Google</td><td>En tu teléfono y, si activas la sincronización, en Firebase</td><td>Mostrar con qué cuenta guardas y abrir tu espacio de sincronización.</td></tr>
+      <tr><td>Tipo de precursorado y, si eres precursor especial, tu perfil (hombre, mujer o salud delicada) y sus horas</td><td>En tu teléfono y, si sincronizas, en Firebase</td><td>Calcular la meta de cada mes. Lo eliges tú y puedes cambiarlo cuando quieras.</td></tr>
+      <tr><td>Tu correo de Google</td><td>En tu teléfono y, si inicias sesión, en Firebase</td><td>Mostrar con qué cuenta guardas y abrir tu espacio de sincronización.</td></tr>
     </tbody>
   </table>
+  <p>El perfil «salud delicada» solo sirve para fijar unas horas menores: la app no guarda ningún otro dato de salud ni pregunta por él.</p>
   <p>La app no pide tu ubicación, contactos, fotos, micrófono ni ningún otro permiso de ese tipo. Los recordatorios son avisos del propio teléfono: no envían nada.</p>
 
   <h2>Cuándo salen datos del teléfono</h2>
-  <h3>Hoja de cálculo en tu Google Drive (opcional)</h3>
-  <p>Si conectas tu cuenta de Google, la app crea una hoja de cálculo por curso en <b>tu</b> Drive y la mantiene al día. Usa el permiso <code>drive.file</code>, que solo le deja ver y tocar los archivos que ella misma crea: no puede ver el resto de tu Drive. yzsoftware no tiene acceso a tu Drive ni a esa hoja.</p>
-
   <h3>Sincronización entre dispositivos (opcional)</h3>
-  <p>Si la activas, tus registros, notas de mes, meses cerrados y los ajustes que cambian las cifras (meta, mes de inicio, minutos sueltos y horas especiales) se guardan en <b>Firebase</b>, un servicio de Google, asociados a tu cuenta de Google (correo e identificador de usuario). Así aparecen en tus otros dispositivos. Las reglas de la base de datos hacen que <b>solo tu cuenta</b> pueda leerlos o modificarlos.</p>
+  <p>Si inicias sesión con Google (al empezar o desde Ajustes), la app solo pide saber quién eres (tu correo) y activa la sincronización: tus registros, notas de mes, meses cerrados y los ajustes que cambian las cifras (meta, mes de inicio, tipo de precursorado, minutos sueltos y horas especiales) se guardan en <b>Firebase</b>, un servicio de Google, asociados a tu cuenta de Google (correo e identificador de usuario). Así aparecen en tus otros dispositivos. Las reglas de la base de datos hacen que <b>solo tu cuenta</b> pueda leerlos o modificarlos. Puedes desactivarla en Ajustes.</p>
   <p>Firebase actúa como encargado del tratamiento por cuenta de yzsoftware. Sus servidores pueden estar fuera del Espacio Económico Europeo; Google aplica las garantías previstas por el RGPD (cláusulas contractuales tipo). Más información en la <a href="https://firebase.google.com/support/privacy" rel="noopener">privacidad de Firebase</a>.</p>
 
+  <h3>Hoja de cálculo en tu Google Drive (opcional)</h3>
+  <p>Es aparte de la sincronización y solo si la eliges: entonces la app te pide además permiso sobre Drive, crea una hoja de cálculo por curso en <b>tu</b> Drive y la mantiene al día. Usa el permiso <code>drive.file</code>, que solo le deja ver y tocar los archivos que ella misma crea: no puede ver el resto de tu Drive. yzsoftware no tiene acceso a tu Drive ni a esa hoja.</p>
+
   <h3>Copias de seguridad</h3>
-  <p>Al exportar una copia, la app genera un archivo en tu teléfono y tú decides dónde guardarlo. Si tienes activada la copia de seguridad de Android en tu cuenta de Google, el sistema puede incluir los datos de la app en ella; eso lo gestiona Android, no la app.</p>
+  <p>Al exportar una copia, la app genera un archivo en tu teléfono y tú decides dónde guardarlo. Si activas la <b>copia automática</b>, la app escribe un archivo (<code>MiPrecursorado-copia.json</code>) en la carpeta que tú elijas cada vez que cambian tus datos; si esa carpeta la sincroniza otro servicio (por ejemplo, la app de Drive), ese servicio recibe la copia según sus propias condiciones. Si tienes activada la copia de seguridad de Android en tu cuenta de Google, el sistema puede incluir los datos de la app en ella; eso lo gestiona Android, no la app.</p>
+  <p>Importar una copia o una hoja de cálculo descargada (<code>.json</code> o <code>.xlsx</code>) solo lee el archivo que eliges, en el propio teléfono.</p>
 
   <h2>Base legal y conservación</h2>
   <ul>
-    <li>Guardar en Drive y sincronizar solo ocurre si tú lo activas: la base es tu <b>consentimiento</b> y la prestación del servicio que pides.</li>
+    <li>Sincronizar, guardar en Drive y la copia automática solo ocurren si tú lo activas: la base es tu <b>consentimiento</b> y la prestación del servicio que pides.</li>
     <li>Los datos sincronizados se conservan mientras tengas la sincronización. Puedes borrarlos cuando quieras (ver abajo); al hacerlo se eliminan de Firebase junto con tu cuenta.</li>
     <li>Los datos del teléfono se borran desde la app (<i>Ajustes → Borrar todo</i>) o al desinstalarla.</li>
   </ul>
